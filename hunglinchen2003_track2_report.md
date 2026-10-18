@@ -117,10 +117,22 @@ Excluded. Ponatinib’s boxed warning covers arterial occlusion, venous thromboe
 
 If the only question is the knockdown nucleus, any of the six may still be tested singly. The names this filter would carry toward a later clinical discussion are entrectinib and pralsetinib. Tucatinib and capmatinib are backups. Ponatinib and lapatinib are not.
 
+## CMap drugs that raise BUB1B mRNA
+
+A LINCS L1000-to-RNAseq file, `results/bub1b_l1000_rnaseq_up.csv`, lists 32 signatures with BUB1B fold change above 1. BUB1B is an L1000 landmark gene. Each row is one cell line, one dose and one time, with connectivity about 0.03. This is not a protein stability measurement, and it does not reorder Table 6.
+
+Mitotic poisons in that file raise the transcript because cells collect in G2/M. PF-477736, a CHK1 inhibitor, is the top row at fold change 1.94. HMN-214 (1.27) and tozasertib (1.04) are in the file, and the accompanying CMap report adds barasertib. Ponatinib is also in the file, at 1.14. These stay off the protective list. They are not combination partners for the six.
+
+The marketed, non-mitotic names are the repurposing set: risperidone 1.43, doxycycline 1.38, duloxetine 1.36, quetiapine 1.32, haloperidol 1.28, isradipine 1.26, bezafibrate 1.12 and vorinostat 1.07. The CMap report also cites valproic acid. That drug is not a row in the 32-line file, so no fold change is given here.
+
+A pair would mean more mRNA from the p.Asn1002Lys allele plus one first-tier kinase drug. p.Leu737Ter is a truncation. Table 6 compounds were not shown to stabilise the protein. The pair is a cell hypothesis. Test each drug alone first. The only pair worth staging next is doxycycline with entrectinib, or doxycycline with pralsetinib. Doxycycline is marketed, its fold change is among the higher approved-drug values, and it is not a strong CYP3A inhibitor. In a young child the tetracycline warning on teeth and bone still applies, so this is not a dose.
+
+Antipsychotics and duloxetine are not partners. Quetiapine, risperidone and haloperidol are CYP3A substrates and prolong QT. Entrectinib inhibits CYP3A and has a QT warning. Tucatinib is a strong CYP3A inhibitor. Duloxetine adds a liver warning. Isradipine is a CYP3A substrate and lowers blood pressure. Bezafibrate needs renal caution beside nephrocalcinosis. Vorinostat and valproic acid are HDAC inhibitors. Valproic acid has a boxed hepatotoxicity warning in young children. They are not add-on doses for the first-tier drugs.
+
 ## Limits
 
 No parental phase, no RNA, no patient cell. The absent N1002K knock-in is the screening design above, not a missing allele-specific control. Predictor scores are predictors. Vina is not a Kd. DynamicBind affinity is not a Kd, and the flexible poses did not restore the wild-type 1002–1012 window; affinity is used as a binding reference only. The ubiquitin hypothesis is untested. The imaging is one field.
 
 ## 中文摘要
 
-TMU-IIH PharmOmics，台北醫學大學跨領域學院與藥學院。這個 MVA 孩子唯一的雙等位功能變異是 *BUB1B* p.Leu737Ter 與 p.Asn1002Lys，機制是紡錘體檢查點的功能失去。Track 2 提案是 14 個 FDA 核准藥，依 DynamicBind 對激酶的預測親和力排序。優先六名是 pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。實驗讀值是 HeLa *BUB1B* knockdown 的細胞核是否回到對照。不用 N1002K knock-in，是為了讓讀值對其他 *BUB1B* 基因型，以及其他紡錘體組成或代謝異常的 MVA 病人仍然適用。前六名不是複方。兒童標示只涵蓋 pralsetinib 的 12 歲以上 RET 融合甲狀腺癌，以及 entrectinib 大於 1 個月且腫瘤有 NTRK 融合的情形；另外四個藥的兒童安全性未建立。臨床上還需要腫瘤自己的體細胞突變分析。臨床相容性另排一層，不取代表 6：第一梯隊是 entrectinib 與 pralsetinib；第二梯隊是 tucatinib 與 capmatinib；ponatinib 與 lapatinib 依黑框警告排除。八個 HPO 沒有發育遲緩。Entrectinib 的兒童適應症是 NTRK 融合實體瘤，不是未定序的橫紋肌肉瘤。Lapatinib 要與餐食隔開至少一小時，不是配高脂食物。這不是治療建議。完整中英對照在同一儲存庫的 `index.html`。
+TMU-IIH PharmOmics，台北醫學大學跨領域學院與藥學院。這個 MVA 孩子唯一的雙等位功能變異是 *BUB1B* p.Leu737Ter 與 p.Asn1002Lys，機制是紡錘體檢查點的功能失去。Track 2 提案是 14 個 FDA 核准藥，依 DynamicBind 對激酶的預測親和力排序。優先六名是 pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。實驗讀值是 HeLa *BUB1B* knockdown 的細胞核是否回到對照。不用 N1002K knock-in，是為了讓讀值對其他 *BUB1B* 基因型，以及其他紡錘體組成或代謝異常的 MVA 病人仍然適用。前六名不是複方。兒童標示只涵蓋 pralsetinib 的 12 歲以上 RET 融合甲狀腺癌，以及 entrectinib 大於 1 個月且腫瘤有 NTRK 融合的情形；另外四個藥的兒童安全性未建立。臨床上還需要腫瘤自己的體細胞突變分析。臨床相容性另排一層，不取代表 6：第一梯隊是 entrectinib 與 pralsetinib；第二梯隊是 tucatinib 與 capmatinib；ponatinib 與 lapatinib 依黑框警告排除。八個 HPO 沒有發育遲緩。Entrectinib 的兒童適應症是 NTRK 融合實體瘤，不是未定序的橫紋肌肉瘤。Lapatinib 要與餐食隔開至少一小時，不是配高脂食物。CMap L1000 另有 32 個會提高 BUB1B mRNA 的簽名。CHK1、PLK、Aurora 那一類，以及清單裡的 ponatinib，不拿來合併。已上市、非有絲分裂的老藥裡，只有 doxycycline 值得在單藥有效之後，於細胞實驗跟 entrectinib 或 pralsetinib 做一對。抗精神病藥、duloxetine、vorinostat 與 valproic acid 不做成併用。這不是治療建議。完整中英對照在同一儲存庫的 `index.html`。
