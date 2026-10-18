@@ -1,6 +1,6 @@
 # TMU Track 2 report: repositioned FDA drugs for BUB1B p.Asn1002Lys
 
-Hung-Lin Chen, on behalf of the faculty–student team  
+Hung-Lin Chen, on behalf of TMU-IIH PharmOmics  
 College of Interdisciplinary Studies and College of Pharmacy, Taipei Medical University
 
 Hugging Face account: `hunglinchen2003`  
@@ -11,7 +11,7 @@ This is a computational and cellular hypothesis. It is not a dose and not a reco
 
 ## Track 2 form
 
-Team name: TMU faculty–student team, Taipei Medical University, College of Interdisciplinary Studies and College of Pharmacy.
+Team name: TMU-IIH PharmOmics, Taipei Medical University, College of Interdisciplinary Studies and College of Pharmacy.
 
 Approach: One child’s GRCh38 VCF and eight HPO terms identified compound-heterozygous *BUB1B* (p.Leu737Ter and p.Asn1002Lys) as the only biallelic functional result among the MVA genes scanned. The mechanism is loss of function of the spindle-assembly checkpoint. Full-length chaperone docking and kinase-fold rescue failed. The Track 2 list is fourteen FDA-approved drugs from the HY-L066 Lys1002 Vina screen that match cancer or growth failure, ordered by DynamicBind predicted affinity for the kinase. The lead six are pralsetinib, lapatinib, tucatinib, entrectinib, capmatinib and ponatinib. The proposed experiment is reversal of the HeLa *BUB1B*-knockdown nucleus. Knockdown, rather than an N1002K knock-in, is deliberate: a hit should be readable in other *BUB1B* alleles and in other spindle-assembly or spindle-metabolism defects. The lead six are single-agent assay candidates, not a combination and not a paediatric regimen. A tumour somatic genotype would be required before any labelled use.
 
@@ -123,4 +123,4 @@ No parental phase, no RNA, no patient cell. The absent N1002K knock-in is the sc
 
 ## 中文摘要
 
-台北醫學大學跨領域學院與藥學院師生團隊。這個 MVA 孩子唯一的雙等位功能變異是 *BUB1B* p.Leu737Ter 與 p.Asn1002Lys，機制是紡錘體檢查點的功能失去。Track 2 提案是 14 個 FDA 核准藥，依 DynamicBind 對激酶的預測親和力排序。優先六名是 pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。實驗讀值是 HeLa *BUB1B* knockdown 的細胞核是否回到對照。不用 N1002K knock-in，是為了讓讀值對其他 *BUB1B* 基因型，以及其他紡錘體組成或代謝異常的 MVA 病人仍然適用。前六名不是複方。兒童標示只涵蓋 pralsetinib 的 12 歲以上 RET 融合甲狀腺癌，以及 entrectinib 大於 1 個月且腫瘤有 NTRK 融合的情形；另外四個藥的兒童安全性未建立。臨床上還需要腫瘤自己的體細胞突變分析。臨床相容性另排一層，不取代表 6：第一梯隊是 entrectinib 與 pralsetinib；第二梯隊是 tucatinib 與 capmatinib；ponatinib 與 lapatinib 依黑框警告排除。八個 HPO 沒有發育遲緩。Entrectinib 的兒童適應症是 NTRK 融合實體瘤，不是未定序的橫紋肌肉瘤。Lapatinib 要與餐食隔開至少一小時，不是配高脂食物。這不是治療建議。完整中英對照在同一儲存庫的 `index.html`。
+TMU-IIH PharmOmics，台北醫學大學跨領域學院與藥學院。這個 MVA 孩子唯一的雙等位功能變異是 *BUB1B* p.Leu737Ter 與 p.Asn1002Lys，機制是紡錘體檢查點的功能失去。Track 2 提案是 14 個 FDA 核准藥，依 DynamicBind 對激酶的預測親和力排序。優先六名是 pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。實驗讀值是 HeLa *BUB1B* knockdown 的細胞核是否回到對照。不用 N1002K knock-in，是為了讓讀值對其他 *BUB1B* 基因型，以及其他紡錘體組成或代謝異常的 MVA 病人仍然適用。前六名不是複方。兒童標示只涵蓋 pralsetinib 的 12 歲以上 RET 融合甲狀腺癌，以及 entrectinib 大於 1 個月且腫瘤有 NTRK 融合的情形；另外四個藥的兒童安全性未建立。臨床上還需要腫瘤自己的體細胞突變分析。臨床相容性另排一層，不取代表 6：第一梯隊是 entrectinib 與 pralsetinib；第二梯隊是 tucatinib 與 capmatinib；ponatinib 與 lapatinib 依黑框警告排除。八個 HPO 沒有發育遲緩。Entrectinib 的兒童適應症是 NTRK 融合實體瘤，不是未定序的橫紋肌肉瘤。Lapatinib 要與餐食隔開至少一小時，不是配高脂食物。這不是治療建議。完整中英對照在同一儲存庫的 `index.html`。

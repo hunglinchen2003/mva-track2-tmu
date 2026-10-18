@@ -1,7 +1,7 @@
 # TMU · MVA Hackathon 2026 · Track 2
 
-台北醫學大學跨領域學院與藥學院師生團隊。  
-Faculty–student team, College of Interdisciplinary Studies and College of Pharmacy, Taipei Medical University.
+TMU-IIH PharmOmics，台北醫學大學跨領域學院與藥學院。  
+TMU-IIH PharmOmics, College of Interdisciplinary Studies and College of Pharmacy, Taipei Medical University.
 
 - Bilingual report: [index.html](index.html)
 - Upload file for the Track 2 form (Markdown, name includes the Hugging Face account): [hunglinchen2003_track2_report.md](hunglinchen2003_track2_report.md)
