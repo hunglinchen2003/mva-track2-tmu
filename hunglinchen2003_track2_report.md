@@ -26,7 +26,7 @@ Mechanism: loss of function, not gain of function. Pathway: BubR1 and the spindl
 
 Time: the campaign ran across the hackathon window. Person-hours were not kept as one timesheet.
 
-Pitch video: https://youtu.be/wtiUPgAgIpE
+Pitch video: https://youtu.be/415cWfMVpw8
 
 ## Mechanism
 

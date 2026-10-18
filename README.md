@@ -7,7 +7,7 @@ TMU-IIH PharmOmics, College of Interdisciplinary Studies and College of Pharmacy
 - Upload file for the Track 2 form (Markdown, name includes the Hugging Face account): [hunglinchen2003_track2_report.md](hunglinchen2003_track2_report.md)
 - GitHub: https://github.com/hunglinchen2003/mva-track2-tmu
 
-Pitch video: https://youtu.be/wtiUPgAgIpE
+Pitch video: https://youtu.be/415cWfMVpw8
 
 Scores in `results/` are the local AutoDock Vina and DynamicBind outputs. `results/bub1b_l1000_rnaseq_up.csv` is the LINCS L1000-to-RNAseq list of signatures in which BUB1B transcript abundance rose. The vendor HY-L066 spreadsheet and the Vina map files stay on the TMU workstation. Scripts in `code/` record the settings: 22 Å box on Lys1002 NZ, Vina 1.2.7, exhaustiveness 8, seed 17; DynamicBind paper weights, 10 steps, 2 samples, no relax.
 
