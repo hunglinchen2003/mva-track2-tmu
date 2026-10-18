@@ -1,0 +1,14 @@
+{
+  "hy_l066_scored": 2432,
+  "fda_in_scored_set": 1339,
+  "tcm_newly_docked": 12,
+  "pool": 1382,
+  "top100": 100,
+  "symptom_kept": 39,
+  "excluded_as_mitotic_or_toxic": 1,
+  "dynamicbind_n": 14,
+  "box": "22 A cube centered on Lys1002 NZ (-26.781, -7.289, 7.438)",
+  "vina": "1.2.7 exhaustiveness 8 seed 17",
+  "dynamicbind_rule": "primary oncology target, growth, kidney, or muscle link; not a mitotic poison; heavy-atom distance to Lys1002 NZ <= 4.2 A; best 12 mutant Vina scores",
+  "incidental_anticancer_only": 5
+}

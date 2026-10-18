@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TMU · MVA Track 2 · BUB1B N1002K</title>
+<style>
+  :root {
+    --ink: #1c1917;
+    --muted: #57534e;
+    --line: #e7e0d6;
+    --paper: #f7f4ee;
+    --card: #fffdf8;
+    --green: #0c4a3e;
+    --green-2: #146355;
+    --gold: #8a5a12;
+    --warn: #9a3412;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--paper);
+    font: 17px/1.65 "Segoe UI", "PingFang TC", "Noto Sans TC", sans-serif;
+  }
+  body[data-lang="zh"] .en { display: none; }
+  body[data-lang="en"] .zh { display: none; }
+  header.top {
+    background: var(--green);
+    color: #f6f3ec;
+    padding: 28px 0 22px;
+  }
+  .wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+  .brand {
+    display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; flex-wrap: wrap;
+  }
+  .kicker { letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; opacity: 0.85; margin: 0 0 6px; }
+  h1 { font-family: Georgia, "PMingLiU", serif; font-weight: 600; font-size: clamp(28px, 4vw, 40px); line-height: 1.25; margin: 0 0 8px; }
+  .sub { margin: 0; max-width: 68ch; color: #efe7d8; }
+  .lang {
+    display: flex; gap: 8px;
+  }
+  .lang button {
+    border: 1px solid rgba(255,255,255,0.45);
+    background: transparent;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font: inherit;
+  }
+  body[data-lang="zh"] .lang button[data-set="zh"],
+  body[data-lang="en"] .lang button[data-set="en"] {
+    background: #fff;
+    color: var(--green);
+    border-color: #fff;
+  }
+  nav.bar {
+    position: sticky; top: 0; z-index: 4;
+    background: rgba(247,244,238,0.94);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(8px);
+  }
+  nav.bar .wrap { display: flex; gap: 14px; overflow-x: auto; padding: 10px 0; font-size: 14px; }
+  nav.bar a { color: var(--green); text-decoration: none; white-space: nowrap; }
+  main { padding: 28px 0 64px; }
+  section { margin: 0 0 28px; }
+  h2 {
+    font-family: Georgia, "PMingLiU", serif;
+    color: var(--green);
+    font-size: 28px;
+    margin: 0 0 10px;
+    padding-top: 8px;
+  }
+  h3 { font-size: 18px; margin: 18px 0 6px; }
+  p { margin: 0 0 12px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 18px 8px;
+    margin: 12px 0;
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  .stat b { display: block; font-size: 20px; color: var(--green); }
+  .stat span { color: var(--muted); font-size: 14px; }
+  ol.logic { margin: 0; padding-left: 22px; }
+  ol.logic li { margin: 0 0 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--card); }
+  th, td { border-bottom: 1px solid var(--line); text-align: left; padding: 7px 8px; vertical-align: top; }
+  th { background: #e7f0ee; color: var(--green); font-weight: 650; }
+  .scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+  figure { margin: 14px 0; }
+  figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; background: white; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  .note { border-left: 4px solid var(--gold); padding: 8px 12px; background: #fff8ec; }
+  .warn { border-left: 4px solid var(--warn); padding: 8px 12px; background: #fff5f2; }
+  code { font-family: Consolas, "Courier New", monospace; font-size: 0.92em; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); padding: 22px 0 40px; font-size: 14px; }
+  a { color: var(--green-2); }
+</style>
+</head>
+<body data-lang="zh">
+<header class="top">
+  <div class="wrap brand">
+    <div>
+      <p class="kicker">Taipei Medical University · 台北醫學大學</p>
+      <h1><span class="zh">MVA Track 2：從一個孩子的 BUB1B 到可重定位的核准藥</span><span class="en">MVA Track 2: from one child’s BUB1B to repositioned approved drugs</span></h1>
+      <p class="sub"><span class="zh">跨領域學院與藥學院師生團隊。這是計算與細胞假說，不是治療建議。</span><span class="en">Faculty–student team, College of Interdisciplinary Studies and College of Pharmacy. A computational and cellular hypothesis, not a treatment.</span></p>
+    </div>
+    <div class="lang" role="group" aria-label="language">
+      <button type="button" data-set="zh">中文</button>
+      <button type="button" data-set="en">English</button>
+    </div>
+  </div>
+</header>
+<nav class="bar">
+  <div class="wrap">
+    <a href="#team"><span class="zh">團隊</span><span class="en">Team</span></a>
+    <a href="#form"><span class="zh">Track 2 欄位</span><span class="en">Track 2 fields</span></a>
+    <a href="#logic"><span class="zh">邏輯</span><span class="en">Logic</span></a>
+    <a href="#mechanism"><span class="zh">機制</span><span class="en">Mechanism</span></a>
+    <a href="#methods"><span class="zh">方法</span><span class="en">Methods</span></a>
+    <a href="#results"><span class="zh">結果</span><span class="en">Results</span></a>
+    <a href="#proposal"><span class="zh">最後方案</span><span class="en">Proposal</span></a>
+    <a href="#limits"><span class="zh">限制</span><span class="en">Limits</span></a>
+  </div>
+</nav>
+<main class="wrap">
+
+<section id="team">
+  <h2><span class="zh">團隊</span><span class="en">Team</span></h2>
+  <div class="card">
+    <p><span class="zh"><b>台北醫學大學（TMU）師生團隊。</b>跨領域學院與藥學院。通訊作者 Hung-Lin Chen。Hugging Face 帳號 <code>hunglinchen2003</code>。一人代表團隊送出；評審看的是最新一筆。</span><span class="en"><b>Taipei Medical University (TMU) faculty–student team.</b> College of Interdisciplinary Studies and College of Pharmacy. Correspondent: Hung-Lin Chen. Hugging Face account <code>hunglinchen2003</code>. One member submits. Judges review the latest submission.</span></p>
+    <p><span class="zh">比賽：SageBio Rare Disease, Real Kid · MVA Hackathon 2026。Track 2 要的是已上市藥物的新用途，而且要說清楚機制。</span><span class="en">Challenge: SageBio Rare Disease, Real Kid · MVA Hackathon 2026. Track 2 asks for a new use of a market-approved drug, with the mechanism stated.</span></p>
+  </div>
+</section>
+
+<section id="form">
+  <h2><span class="zh">Track 2 送件需要的資訊</span><span class="en">What Track 2 asks for</span></h2>
+  <div class="scroll">
+  <table>
+    <thead><tr>
+      <th><span class="zh">項目</span><span class="en">Item</span></th>
+      <th><span class="zh">本團隊的答案</span><span class="en">This team</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td><span class="zh">團隊名稱</span><span class="en">Team name</span></td><td>TMU faculty–student team · 台北醫學大學跨領域學院與藥學院</td></tr>
+      <tr><td>GitHub</td><td><a href="https://github.com/hunglinchen2003/mva-track2-tmu">https://github.com/hunglinchen2003/mva-track2-tmu</a></td></tr>
+      <tr><td><span class="zh">報告檔名</span><span class="en">Report filename</span></td><td><code>hunglinchen2003_track2_report.md</code></td></tr>
+      <tr><td><span class="zh">提案藥物</span><span class="en">Proposed drugs</span></td><td><span class="zh">14 個 FDA 核准藥。優先六名：pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。</span><span class="en">Fourteen FDA-approved drugs. Lead six: pralsetinib, lapatinib, tucatinib, entrectinib, capmatinib, ponatinib.</span></td></tr>
+      <tr><td><span class="zh">機制</span><span class="en">Mechanism</span></td><td><span class="zh">功能失去（LOF）。紡錘體檢查點不足，下游是染色體分離錯誤、鑲嵌性非整倍體、胚胎性腫瘤與生長失敗。</span><span class="en">Loss of function. A thin spindle-assembly checkpoint, then mis-segregation, mosaic aneuploidy, embryonal tumour risk and growth failure.</span></td></tr>
+      <tr><td><span class="zh">生成式 AI</span><span class="en">Generative AI</span></td><td><span class="zh">Cursor 工作階段，模型 Grok 4.7（xAI）。方案等級沒有另行登記。對接分數由本機 Vina 與 DynamicBind 計算，不是語言模型填的。</span><span class="en">Cursor session, model Grok 4.7 (xAI). The subscription tier was not logged separately. Docking scores come from local Vina and DynamicBind, not from the language model.</span></td></tr>
+      <tr><td><span class="zh">三分鐘影片</span><span class="en">Three-minute pitch</span></td><td><span class="zh">表單要 YouTube 或 Vimeo 網址。這份儲存庫沒有代替影片。送件前仍要上傳。</span><span class="en">The form requires a YouTube or Vimeo URL. This repository does not replace that video. Upload it before submitting.</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="logic">
+  <h2><span class="zh">邏輯</span><span class="en">Logic</span></h2>
+  <div class="card">
+    <p class="zh">我們先問哪一個基因是這個孩子的致病基因，再問哪一組已核准的藥值得送進細胞實驗。中間放棄過三條路。</p>
+    <p class="en">We first asked which gene is causal in this child, then which approved molecules are worth taking into a cell assay. Three earlier routes were stopped.</p>
+    <ol class="logic">
+      <li><span class="zh">臨床八個 HPO 詞加上全基因組 VCF（5,012,204 個變異）。十個 MVA 基因掃描後，只有 <i>BUB1B</i> 是複合異型合子。</span><span class="en">Eight HPO terms plus a genome VCF (5,012,204 variants). Across ten MVA genes, only <i>BUB1B</i> was compound heterozygous.</span></li>
+      <li><span class="zh">全長 BubR1 沒有穩定的藥袋。AlphaFold 3 的 Cα RMSD 33.5 Å 來自無序區，全長對接停止。</span><span class="en">Full-length BubR1 had no stable pocket. The AlphaFold 3 Cα RMSD of 33.5 Å is the disordered chain. Full-length docking stopped.</span></li>
+      <li><span class="zh">激酶片段（700–1050）上，DynamicBind 沒有把 1002–1012 拉回野生型。空載突變體相似度 49.9，最好的配體 exendin-4 是 47.4。</span><span class="en">On the kinase fragment (700–1050), DynamicBind did not pull residues 1002–1012 back to wild type. Apo mutant similarity 49.9; best ligand, exendin-4, 47.4.</span></li>
+      <li><span class="zh">兩百萬個通過血腦屏障過濾的研究用化合物裡，有十個 Vina 姿態靠近 Lys1002。它們不是核准藥，不能當 Track 2 清單。</span><span class="en">Ten Vina poses from 2.43 million barrier-filtered research compounds sit near Lys1002. They are not approved drugs, so they are not the Track 2 list.</span></li>
+      <li><span class="zh">回到 HY-L066 的 FDA 藥，加上有文獻的中藥單體。用 Lys1002 的 Vina 分數取前 100，留下和癌症或生長失敗有關的藥，再用 DynamicBind 對激酶的預測親和力排序。距離不拿來當 DynamicBind 的門檻。</span><span class="en">Return to FDA-flagged HY-L066 drugs plus characterized herbal constituents. Take the Vina top 100 at Lys1002, keep cancer or growth-failure links, then rank by DynamicBind affinity for the kinase. Distance is not a DynamicBind gate.</span></li>
+      <li><span class="zh">細胞讀值已經定義：HeLa 的 <i>BUB1B</i> knockdown 讓細胞核變少、變小、微核樣與固縮增加。下一步是看藥能不能把這些數字拉回對照。</span><span class="en">The cell readout is already defined. <i>BUB1B</i> knockdown in HeLa makes fewer, smaller nuclei, with more micronucleus-like objects and pyknosis. The next question is whether a drug moves those numbers back.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="mechanism">
+  <h2><span class="zh">機制</span><span class="en">Mechanism</span></h2>
+  <div class="grid">
+    <div class="stat"><b>LOF</b><span class="zh">不是功能獲得。一個截斷加上一個低功能錯義。</span><span class="en">Not gain of function. One truncation plus one hypomorphic missense.</span></div>
+    <div class="stat"><b>BubR1 / SAC</b><span class="zh">紡錘體組裝檢查點。激酶摺疊也負責把 PP2A-B56 留在著絲點。</span><span class="en">Spindle-assembly checkpoint. The kinase fold also holds PP2A-B56 at the kinetochore.</span></div>
+    <div class="stat"><b><span class="zh">下游</span><span class="en">Downstream</span></b><span class="zh">分離錯誤、鑲嵌性非整倍體、橫紋肌肉瘤、生長失敗、親代反覆流產。</span><span class="en">Mis-segregation, mosaic aneuploidy, rhabdomyosarcoma, growth failure, parental pregnancy loss.</span></div>
+  </div>
+  <div class="card">
+    <p><span class="zh">無效等位基因是 chr15:40209701 T&gt;G，p.Leu737Ter，stop_gained，HIGH，深度 46，等位深度 21/25，VAF 約 54%。終止密碼在 1,050 個胺基酸的約 70% 處，拿掉 C 端激酶域，是典型的無義媒介衰變受質。</span><span class="en">The null allele is chr15:40209701 T&gt;G, p.Leu737Ter, stop_gained, HIGH impact, depth 46, allelic depths 21 and 25, VAF about 54%. The stop is at about 70% of the 1,050-residue protein and removes the C-terminal kinase. It is a classical nonsense-mediated-decay substrate.</span></p>
+    <p><span class="zh">第二個等位基因是 chr15:40220612 T&gt;G，p.Asn1002Lys，missense，MODERATE，深度 28，等位深度 15/13，VAF 約 46%。SIFT 0.00，PolyPhen-2 0.99，CADD 24.5。它在激酶 C 葉螺旋 αG 的 N-cap，離已發表的熱點 p.Leu1012Pro 十個殘基。ATP 位點的 Lys795 只移動 1.03 Å。1002 的 Cα 移動 4.07 Å。這比較像蛋白質不穩定，而不是催化位點壞死。新的離胺酸側鏈溶劑可及表面從 27 增到 82 Å²。它在幾何上可以被泛素化，我們沒有測泛素。</span><span class="en">The second allele is chr15:40220612 T&gt;G, p.Asn1002Lys, missense, MODERATE, depth 28, allelic depths 15 and 13, VAF about 46%. SIFT 0.00, PolyPhen-2 0.99, CADD 24.5. It is the N-cap of helix αG, ten residues from the published hotspot p.Leu1012Pro. The ATP-site lysine, Lys795, moves only 1.03 Å. The Cα at 1002 moves 4.07 Å. That fits instability better than a dead catalytic site. Side-chain SASA rises from 27 to 82 Å². The new amine could be ubiquitylated. We did not measure ubiquitin.</span></p>
+    <p><span class="zh">沒有親代 DNA，所以反式排列是依合子型與疾病模型推論。Track 1 這對變異的信心是 0.95。cDNA 編號沒有另寫，因為沒有 RNA。</span><span class="en">There is no parental DNA, so trans configuration is inferred from zygosity and the disease model. Track 1 confidence for the pair was 0.95. No cDNA nomenclature was invented, because there is no RNA.</span></p>
+  </div>
+</section>
+
+<section id="methods">
+  <h2><span class="zh">方法</span><span class="en">Methods</span></h2>
+  <h3><span class="zh">從變異到藥</span><span class="en">From variant to drug</span></h3>
+  <p><span class="zh">VCF 是主辦單位釋出的 Sentieon Haplotyper 加 GATK 過濾結果，參考基因組 GRCh38，樣本 WGS_EX2312012。我們沒有重跑 FASTQ。十個 MVA 基因用 Ensembl 座標掃描，VEP 註解，再以 MalaCards 的十二個位點複查。只有同時有兩個功能性等位基因的基因留下。</span><span class="en">The VCF is the released Sentieon Haplotyper plus GATK call on GRCh38 for sample WGS_EX2312012. FASTQ was not realigned. Ten MVA genes were scanned on Ensembl coordinates and annotated with VEP, then a twelve-locus MalaCards pass was repeated. A gene was kept only when it carried two functional alleles.</span></p>
+  <p><span class="zh">結構用 AlphaFold。後續對接只用 UniProt 700–1050。Vina 盒子是以突變體 Lys1002 NZ（−26.781, −7.289, 7.438）為中心的 22 Å 立方體，Vina 1.2.7，exhaustiveness 8，seed 17。HY-L066 已有 2,432 個獨特配體分數，其中 1,339 個在廠商表標成 FDA。53 個中藥單體來自 PubChem，已在藥庫的沿用舊分數，不在藥庫的以 RDKit ETKDGv3（seed 17）與 Meeko 準備後對接。</span><span class="en">Structures are AlphaFold models. Later docking used UniProt 700–1050 only. The Vina box is a 22 Å cube on mutant Lys1002 NZ (−26.781, −7.289, 7.438), Vina 1.2.7, exhaustiveness 8, seed 17. HY-L066 already had scores for 2,432 unique ligands, 1,339 flagged FDA in the vendor table. Fifty-three herbal constituents came from PubChem. Existing library scores were reused. New molecules were prepared with RDKit ETKDGv3 (seed 17) and Meeko.</span></p>
+  <p><span class="zh">前 100 名依突變體 Vina 能量。留下標靶屬於腫瘤激酶，或註明生長激素訊息、泌尿道的藥。說明文字裡順帶提到抗腫瘤，不算腫瘤藥。雷公藤紅素因雷公藤毒性移除。c-Kit-IN-1 在 PubChem 是研究代碼，移除。DynamicBind 用論文權重、10 steps、每個複合物 2 個樣本、不做 relax。表 6 的親和力是較高 lDDT 姿態上的預測值，數字愈大表示模型認為跟激酶結合愈緊。它不是 Vina 的 kcal/mol，也不拿離 Lys1002 的距離當錄取條件。</span><span class="en">The top 100 were ranked by mutant Vina energy. A row was kept when the annotated target was an oncology kinase, or the text matched growth-hormone signalling or the urinary tract. A passing anticancer sentence was not an oncology indication. Celastrol was removed for Tripterygium toxicity. c-Kit-IN-1 is a research code on PubChem and was removed. DynamicBind used paper weights, 10 steps, two samples, no relaxation. Table 6 affinity is the value on the higher-lDDT pose. A larger number is a higher predicted affinity for the kinase. It is not a Vina energy in kcal/mol, and distance to Lys1002 was not an acceptance rule.</span></p>
+  <p><span class="zh">前六名的剛性姿態用 PLIP 3.0.1 讀複合物，畫出和 K1002 的相對位置。那張圖是幾何補充，不改變表 6 的排序。</span><span class="en">The six lead rigid poses were read with PLIP 3.0.1 and drawn against K1002. That figure is geometry. It does not reorder Table 6.</span></p>
+  <h3><span class="zh">人工與自動</span><span class="en">Manual and automated</span></h3>
+  <p><span class="zh">變異掃描、Vina、DynamicBind、PLIP 是自動的。人工決定包括：全長對接放棄、有絲分裂毒物不進保護清單、廠商表上的研究代碼剔除、膀胱藥不當成腎鈣質沉著的藥，以及最後用 DynamicBind 親和力而不是距離來排核准藥。</span><span class="en">Variant scan, Vina, DynamicBind and PLIP were automated. Manual decisions were: stop full-length docking, keep mitotic poisons off the protective list, drop a vendor “FDA” row that is a research code, not treat bladder drugs as nephrocalcinosis drugs, and rank the approved list by DynamicBind affinity rather than by distance.</span></p>
+  <h3><span class="zh">資料</span><span class="en">Data</span></h3>
+  <p><span class="zh">公開：黑客松 VCF 與表型、Ensembl、VEP、gnomAD 註解、ClinVar、HPO、OMIM、MalaCards、PubMed、ChEMBL、ZINC20、PubChem、UniProt。專有或廠商：MedChemExpress HY-L066 清單（未整份公開）、本機親和圖。HeLa 影像是本團隊 2026-10-14 的 wild-type knockdown，不是病人細胞，也不是 N1002K 敲入。</span><span class="en">Public: the hackathon VCF and phenotypes, Ensembl, VEP, gnomAD annotation, ClinVar, HPO, OMIM, MalaCards, PubMed, ChEMBL, ZINC20, PubChem, UniProt. Proprietary or vendor: the MedChemExpress HY-L066 table (not republished in full) and the local affinity maps. The HeLa image is this team’s wild-type knockdown on 14 Oct 2026. It is not a patient cell and not an N1002K knock-in.</span></p>
+  <h3><span class="zh">生成式 AI，必填</span><span class="en">Generative AI, required</span></h3>
+  <div class="note">
+    <p><span class="zh">Cursor 工作階段，模型 Grok 4.7（xAI）。訂閱等級沒有寫進分析紀錄。語言模型用來寫腳本、整理本機輸出與這份報告。Vina、DynamicBind、PLIP 與細胞核計數不是模型生成的。對接在本機工作站完成。這份報告不主張變異層級的資料被拿去訓練模型。</span><span class="en">Cursor session, model Grok 4.7 (xAI). The subscription tier was not written into the analysis log. The language model wrote scripts, assembled local outputs, and drafted this report. Vina, DynamicBind, PLIP and the nuclear counts were not generated by the model. Docking ran on the local workstation. This report does not claim that variant-level data were used to train the model.</span></p>
+  </div>
+  <h3><span class="zh">方法摘要</span><span class="en">Method abstract</span></h3>
+  <p><span class="zh">一個 MVA 孩子的 VCF 與八個 HPO 詞指出 <i>BUB1B</i> 複合異型合子：p.Leu737Ter 與 p.Asn1002Lys。前者像無效等位基因，後者在 αG，預測使 BubR1 不穩定。全長伴護與激酶摺疊救援都失敗。Track 2 清單因此改為 FDA 藥。HY-L066 在 Lys1002 的 22 Å 盒子已有 Vina 分數。前 100 名再依腫瘤或生長相關適應症過濾，十四個藥用 DynamicBind 預測對激酶的親和力排序。優先六名是 pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。優點是每一個都是已上市藥，而且分數可回溯到本機輸出。限制是沒有親代相位、沒有病人細胞、Vina 不是解離常數、DynamicBind 親和力不是 Kd，而且激酶抑制劑對檢查點已弱的孩子可能有細胞毒性。提出的實驗是 HeLa knockdown 細胞核是否回到對照，不是臨床劑量。</span><span class="en">The child’s VCF and eight HPO terms point to compound-heterozygous <i>BUB1B</i>: p.Leu737Ter and p.Asn1002Lys. The first looks null. The second sits on helix αG and is predicted to destabilize BubR1. Full-length chaperone docking and kinase-fold rescue both failed. The Track 2 list is therefore FDA drugs. HY-L066 already had Vina scores in a 22 Å box on Lys1002. The top 100 were filtered for cancer or growth-related labels, and fourteen drugs were ordered by DynamicBind’s predicted affinity for the kinase. The lead six are pralsetinib, lapatinib, tucatinib, entrectinib, capmatinib and ponatinib. The strength is that each name is marketed and every number traces to a local output. The limits are no parental phase, no patient cells, Vina is not a dissociation constant, DynamicBind affinity is not a Kd, and kinase inhibitors may be cytotoxic when the checkpoint is already weak. The proposed experiment is whether the HeLa knockdown nucleus returns toward control. It is not a clinical dose.</span></p>
+</section>
+
+<section id="results">
+  <h2><span class="zh">結果</span><span class="en">Results</span></h2>
+  <div class="grid">
+    <div class="stat"><b>5,012,204</b><span class="zh">VCF 變異</span><span class="en">variants in the VCF</span></div>
+    <div class="stat"><b>215</b><span class="zh"><i>BUB1B</i> 複合異型合子配對分數</span><span class="en"><i>BUB1B</i> compound-het pair score</span></div>
+    <div class="stat"><b>2,427,793</b><span class="zh">血腦屏障庫成功對接</span><span class="en">successful barrier-library docks</span></div>
+    <div class="stat"><b>1,339</b><span class="zh">HY-L066 中標成 FDA 且已有 Vina 分數</span><span class="en">FDA-flagged HY-L066 ligands with Vina scores</span></div>
+  </div>
+
+  <h3><span class="zh">表 5. 不是核准藥的研究用姿態</span><span class="en">Table 5. Research poses, not approved drugs</span></h3>
+  <p><span class="zh">ChEMBL 與 ZINC，Wager 型 CNS 過濾，Uni-Dock 1.2 / Vina，22 Å 盒子。選擇性 = 野生型分數減突變體分數（kcal/mol）。這些分子留在研究表，不進入 Track 2 提案。</span><span class="en">ChEMBL and ZINC, a Wager-type CNS filter, Uni-Dock 1.2 / Vina, 22 Å box. Selectivity is wild-type score minus mutant score (kcal/mol). These molecules stay a research table. They are not the Track 2 proposal.</span></p>
+  <div class="scroll">
+  <table>
+    <thead><tr>
+      <th>#</th><th><span class="zh">化合物</span><span class="en">Compound</span></th>
+      <th><span class="zh">突變</span><span class="en">Mutant</span></th>
+      <th><span class="zh">野生</span><span class="en">Wild type</span></th>
+      <th><span class="zh">選擇性</span><span class="en">Selectivity</span></th>
+      <th>NZ (Å)</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>1</td><td>CHEMBL1445111</td><td>−8.64</td><td>−5.75</td><td>+2.90</td><td>2.96</td></tr>
+      <tr><td>2</td><td>CHEMBL229651</td><td>−8.09</td><td>−6.29</td><td>+1.80</td><td>3.30</td></tr>
+      <tr><td>3</td><td>CHEMBL5816698</td><td>−7.96</td><td>−6.11</td><td>+1.85</td><td>3.22</td></tr>
+      <tr><td>4</td><td>CHEMBL4633401</td><td>−7.95</td><td>−6.02</td><td>+1.93</td><td>3.39</td></tr>
+      <tr><td>5</td><td>CHEMBL1255082</td><td>−7.85</td><td>−6.06</td><td>+1.79</td><td>2.98</td></tr>
+      <tr><td>6</td><td>CHEMBL3781825</td><td>−7.83</td><td>−6.35</td><td>+1.48</td><td>3.04</td></tr>
+      <tr><td>7</td><td>CHEMBL1365318</td><td>−7.81</td><td>−5.94</td><td>+1.87</td><td>3.04</td></tr>
+      <tr><td>8</td><td>CHEMBL1537224</td><td>−7.75</td><td>−6.31</td><td>+1.44</td><td>3.00</td></tr>
+      <tr><td>9</td><td>CHEMBL6015444</td><td>−7.74</td><td>−6.69</td><td>+1.05</td><td>3.05</td></tr>
+      <tr><td>10</td><td>CHEMBL2042022, notoamide B</td><td>−7.74</td><td>−7.23</td><td>+0.51</td><td>3.16</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3><span class="zh">中藥單體</span><span class="en">Herbal constituents</span></h3>
+  <p><span class="zh">篩的是 53 個有文獻的單體，不是複方。45 個有突變體 Vina 分數。前 100 名的門檻是 pazopanib，−6.491 kcal/mol。只有雷公藤紅素（−6.794）跨過這條線，並因毒性沒有進入表 6。黃芩苷 −6.429、薑黃素 −6.411 緊接在門檻外。丹酚酸 B、淫羊藿苷、人參皂苷 Rh2、五味子乙素沒有收斂。黃耆甲苷、人參皂苷 Rg3、三七皂苷 R1、甘草酸太柔軟，沒有送進這個盒子。沒有為它們補分數。</span><span class="en">The screen used 53 published constituents, not crude formulae. Forty-five have a mutant Vina score. The top-100 cutoff is pazopanib at −6.491 kcal/mol. Only celastrol (−6.794) crossed it, and toxicity kept it out of Table 6. Baicalin (−6.429) and curcumin (−6.411) sit just outside. Salvianolic acid B, icariin, ginsenoside Rh2 and schisandrin B did not finish. Astragaloside IV, ginsenoside Rg3, notoginsenoside R1 and glycyrrhizin were too flexible for this box. No score was invented for them.</span></p>
+
+  <h3><span class="zh">表 6. FDA 藥，依 DynamicBind 親和力排序</span><span class="en">Table 6. FDA drugs, ordered by DynamicBind affinity</span></h3>
+  <p><span class="zh">Vina 是 kcal/mol。DB 是預測親和力，愈大愈緊。優先組是前六列：核准的腫瘤藥，突變體 Vina ≤ −7.1，而且 DB ≥ 6.7。</span><span class="en">Vina values are kcal/mol. DB is predicted affinity; larger means tighter. The lead set is the first six rows: approved oncology drugs, mutant Vina ≤ −7.1, and DB ≥ 6.7.</span></p>
+  <div class="scroll">
+  <table>
+    <thead><tr>
+      <th>#</th><th><span class="zh">藥</span><span class="en">Drug</span></th>
+      <th><span class="zh">與此案例的連結</span><span class="en">Link to this case</span></th>
+      <th><span class="zh">Vina 突變</span><span class="en">Vina mutant</span></th>
+      <th><span class="zh">Vina 野生</span><span class="en">Vina wild type</span></th>
+      <th><span class="zh">DB 突變</span><span class="en">DB mutant</span></th>
+      <th><span class="zh">DB 野生</span><span class="en">DB wild type</span></th>
+      <th><span class="zh">角色</span><span class="en">Role</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Pralsetinib</td><td><span class="zh">RET；癌症</span><span class="en">RET; cancer</span></td><td>−7.127</td><td>−6.646</td><td>7.99</td><td>7.85</td><td><span class="zh">優先</span><span class="en">Lead</span></td></tr>
+      <tr><td>2</td><td>Lapatinib</td><td><span class="zh">EGFR/HER2；癌症</span><span class="en">EGFR/HER2; cancer</span></td><td>−7.181</td><td>−6.516</td><td>7.48</td><td>7.56</td><td><span class="zh">優先</span><span class="en">Lead</span></td></tr>
+      <tr><td>3</td><td>Tucatinib</td><td><span class="zh">HER2；癌症</span><span class="en">HER2; cancer</span></td><td>−7.718</td><td>−6.847</td><td>7.07</td><td>7.03</td><td><span class="zh">優先</span><span class="en">Lead</span></td></tr>
+      <tr><td>4</td><td>Entrectinib</td><td><span class="zh">TRK、ROS1、ALK；癌症</span><span class="en">TRK, ROS1, ALK; cancer</span></td><td>−7.560</td><td>−7.151</td><td>6.89</td><td>6.63</td><td><span class="zh">優先</span><span class="en">Lead</span></td></tr>
+      <tr><td>5</td><td>Capmatinib</td><td><span class="zh">MET；癌症</span><span class="en">MET; cancer</span></td><td>−7.207</td><td>−7.043</td><td>6.71</td><td>6.76</td><td><span class="zh">優先</span><span class="en">Lead</span></td></tr>
+      <tr><td>6</td><td>Ponatinib</td><td><span class="zh">BCR-ABL 等；癌症</span><span class="en">BCR-ABL and others; cancer</span></td><td>−7.631</td><td>−7.287</td><td>6.70</td><td>6.67</td><td><span class="zh">優先</span><span class="en">Lead</span></td></tr>
+      <tr><td>7</td><td>Infigratinib</td><td><span class="zh">FGFR；癌症</span><span class="en">FGFR; cancer</span></td><td>−6.790</td><td>−5.489</td><td>6.60</td><td>6.54</td><td><span class="zh">較早的 cover seed</span><span class="en">Earlier cover seed</span></td></tr>
+      <tr><td>8</td><td>Nilotinib</td><td><span class="zh">BCR-ABL；癌症</span><span class="en">BCR-ABL; cancer</span></td><td>−8.282</td><td>−7.104</td><td>6.58</td><td>6.68</td><td><span class="zh">Vina 最緊</span><span class="en">Tightest Vina</span></td></tr>
+      <tr><td>9</td><td>Pexidartinib</td><td><span class="zh">CSF1R、c-Kit；癌症</span><span class="en">CSF1R, c-Kit; cancer</span></td><td>−6.984</td><td>−6.321</td><td>6.43</td><td>6.39</td><td><span class="zh">延伸</span><span class="en">Extended</span></td></tr>
+      <tr><td>10</td><td>Regorafenib</td><td><span class="zh">多激酶；癌症</span><span class="en">Multikinase; cancer</span></td><td>−7.098</td><td>−6.607</td><td>6.26</td><td>6.61</td><td><span class="zh">延伸</span><span class="en">Extended</span></td></tr>
+      <tr><td>11</td><td>Macimorelin</td><td><span class="zh">生長激素促分泌；矮小、體重不增、惡病質</span><span class="en">GH secretagogue; short stature, failure to thrive, cachexia</span></td><td>−6.507</td><td>−6.456</td><td>6.20</td><td>6.27</td><td><span class="zh">生長臂</span><span class="en">Growth arm</span></td></tr>
+      <tr><td>12</td><td>Cabozantinib</td><td><span class="zh">MET、VEGFR；癌症</span><span class="en">MET, VEGFR; cancer</span></td><td>−7.012</td><td>−6.286</td><td>6.07</td><td>6.24</td><td><span class="zh">延伸</span><span class="en">Extended</span></td></tr>
+      <tr><td>13</td><td>Momelotinib</td><td><span class="zh">JAK1/2；骨髓纖維化</span><span class="en">JAK1/2; myelofibrosis</span></td><td>−7.393</td><td>−6.527</td><td>5.99</td><td>6.06</td><td><span class="zh">延伸</span><span class="en">Extended</span></td></tr>
+      <tr><td>14</td><td>Sorafenib</td><td><span class="zh">RAF、VEGFR；癌症</span><span class="en">RAF, VEGFR; cancer</span></td><td>−7.063</td><td>−6.712</td><td>5.91</td><td>6.48</td><td><span class="zh">延伸</span><span class="en">Extended</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <figure>
+    <img src="assets/k1002_vina_top6.png" alt="Six Vina poses around K1002">
+    <figcaption><span class="zh">前六名的 AutoDock Vina 姿態與 PLIP。棕色是 K1002。黃虛線是氫鍵，灰虛線是疏水接觸。殘基編號是 UniProt。</span><span class="en">AutoDock Vina poses and PLIP for the lead six. Brown is K1002. Yellow dashes are hydrogen bonds. Gray dashes are hydrophobic contacts. Residue numbers are UniProt.</span></figcaption>
+  </figure>
+  <div class="scroll">
+  <table>
+    <thead><tr>
+      <th><span class="zh">藥</span><span class="en">Drug</span></th>
+      <th><span class="zh">最近重原子到 NZ</span><span class="en">Nearest heavy atom to NZ</span></th>
+      <th><span class="zh">PLIP 與 K1002</span><span class="en">PLIP at K1002</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Pralsetinib</td><td>3.4 Å</td><td><span class="zh">氫鍵 2.60 Å，另有疏水接觸</span><span class="en">H-bond 2.60 Å, plus hydrophobic contacts</span></td></tr>
+      <tr><td>Lapatinib</td><td>3.9 Å</td><td><span class="zh">氫鍵 3.09 Å 與 3.20 Å，另有疏水接觸</span><span class="en">H-bonds 3.09 Å and 3.20 Å, plus a hydrophobic contact</span></td></tr>
+      <tr><td>Tucatinib</td><td>3.4 Å</td><td><span class="zh">三條氫鍵，最近 2.06 Å</span><span class="en">Three H-bonds, the nearest 2.06 Å</span></td></tr>
+      <tr><td>Entrectinib</td><td>3.9 Å</td><td><span class="zh">沒有直接接觸 K1002；鄰近是 N994、K995、R999、E1014</span><span class="en">No direct K1002 contact; neighbours are N994, K995, R999, E1014</span></td></tr>
+      <tr><td>Capmatinib</td><td>3.1 Å</td><td><span class="zh">一條氫鍵 2.32 Å</span><span class="en">One H-bond, 2.32 Å</span></td></tr>
+      <tr><td>Ponatinib</td><td>4.6 Å</td><td><span class="zh">沒有直接接觸 K1002；接觸在 K995、R999</span><span class="en">No direct K1002 contact; contacts are K995 and R999</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3><span class="zh">HeLa 細胞核</span><span class="en">HeLa nuclei</span></h3>
+  <figure>
+    <img src="assets/hela_bub1b_kd.jpg" alt="HeLa BUB1B knockdown Hoechst">
+    <figcaption><span class="zh">對照與 <i>BUB1B</i> knockdown 的 Hoechst 視野。2026-10-14，40×。這是野生型敲低，不是 N1002K。</span><span class="en">Control and <i>BUB1B</i>-knockdown Hoechst fields, 14 Oct 2026, 40×. Wild-type knockdown, not N1002K.</span></figcaption>
+  </figure>
+  <p><span class="zh">細胞核 88 降到 43（−51%）。平均面積 288.8 降到 233.7（−19%），中位數 273 到 232。面積小於 160 像素從 11.4%（10/88）升到 20.9%（9/43）。微核樣物體從 1.1%（1/88）升到 4.7%（2/43）。固縮從 3.4%（3/88）升到 9.3%（4/43）。命中的定義是這些數字回到對照。結合 BubR1 不是必要條件。</span><span class="en">Nuclei fell from 88 to 43 (−51%). Mean area fell from 288.8 to 233.7 (−19%), median from 273 to 232. Area under 160 pixels rose from 11.4% (10/88) to 20.9% (9/43). Micronucleus-like objects rose from 1.1% (1/88) to 4.7% (2/43). Pyknosis rose from 3.4% (3/88) to 9.3% (4/43). A hit moves those numbers toward control. Binding BubR1 is not required.</span></p>
+</section>
+
+<section id="proposal">
+  <h2><span class="zh">最後方案</span><span class="en">Proposal</span></h2>
+  <div class="card">
+    <p><span class="zh">送進細胞實驗的面板是表 6 的十四個已核准藥。優先做前六名。它們和這個孩子的連結是橫紋肌肉瘤所代表的腫瘤表型，不是宣稱這顆腫瘤帶有 RET、HER2 或 MET 驅動變異。Macimorelin 是非激酶的生長臂，對應矮小、體重不增，以及它在癌症惡病質文獻中的位置。Nilotinib 留下，因為它是剛性口袋裡最緊的 Vina 分數。Infigratinib 留下，因為它本來就在較早的 cover 短名單。</span><span class="en">The cell-assay panel is the fourteen approved drugs in Table 6. Run the first six first. Their link to this child is the tumour phenotype represented by rhabdomyosarcoma, not a claim that the tumour carries a RET, HER2 or MET driver. Macimorelin is the non-kinase growth arm, for short stature, failure to thrive, and its place in the cancer-cachexia literature. Nilotinib stays because it is the tightest rigid-pocket Vina score. Infigratinib stays because it was already on the earlier cover shortlist.</span></p>
+    <p><span class="zh">每一個優先藥的理由可以分開看。Pralsetinib 的 DynamicBind 親和力最高（7.99 / 7.85），而且 PLIP 看到 K1002 氫鍵。Lapatinib 與 tucatinib 是 HER2 藥；tucatinib 在六個裡 Vina 最緊（−7.718），對 K1002 有最近 2.06 Å 的氫鍵。Entrectinib 與 ponatinib 的親和力夠高，但 PLIP 沒有直接打到 K1002，所以它們是親和力候選，不是離胺酸蓋子。Capmatinib 最近重原子 3.1 Å，有一條 2.32 Å 氫鍵。</span><span class="en">Each lead drug has its own reason. Pralsetinib has the highest DynamicBind affinity (7.99 / 7.85) and a PLIP hydrogen bond to K1002. Lapatinib and tucatinib are HER2 drugs; tucatinib is the tightest Vina score of the six (−7.718) and has a 2.06 Å hydrogen bond to K1002. Entrectinib and ponatinib rank on affinity, and PLIP does not place them in direct contact with K1002, so they are affinity candidates rather than a lysine cover. Capmatinib’s nearest heavy atom is 3.1 Å, with one 2.32 Å hydrogen bond.</span></p>
+    <div class="warn">
+      <p><span class="zh">Aurora、PLK 與微管藥不在清單上。檢查點已經薄的時候，這類藥可能讓分離更差。表 6 的激酶抑制劑仍然可能有細胞毒性。實驗問題只是 knockdown 的細胞核有沒有回到對照。這不是劑量，也不是給孩子的用藥建議。</span><span class="en">Aurora, PLK and microtubule poisons are not on the list. They can make segregation worse when the checkpoint is already thin. The kinase inhibitors in Table 6 may still be cytotoxic. The experimental question is only whether the knockdown nucleus moves back toward control. This is not a dose and not advice to treat a child.</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="limits">
+  <h2><span class="zh">限制</span><span class="en">Limits</span></h2>
+  <div class="card">
+    <p><span class="zh">沒有親代樣本，所以反式是推論。沒有 RNA，所以無義媒介衰變是推論。沒有病人細胞，也沒有 N1002K 敲入。SIFT、PolyPhen-2、CADD 是預測。Vina 不是解離常數。DynamicBind 親和力不是 Kd，而且這十四個柔性姿態並沒有把 1002–1012 拉回野生型；本表故意只採用它的親和力。泛素假說沒有西方墨點或質譜。HeLa 是一個 40× 視野。中藥單體沒有進入最後面板。</span><span class="en">No parental sample, so trans is inferred. No RNA, so nonsense-mediated decay is inferred. No patient cells and no N1002K knock-in. SIFT, PolyPhen-2 and CADD are predictors. Vina is not a dissociation constant. DynamicBind affinity is not a Kd, and these fourteen flexible poses did not pull residues 1002–1012 back toward wild type; this table uses the affinity on purpose. The ubiquitin idea has no blot or mass spectrum. The HeLa result is one 40× field. No herbal constituent entered the final panel.</span></p>
+  </div>
+  <h3><span class="zh">可重現性</span><span class="en">Reproducibility</span></h3>
+  <p><span class="zh">腳本在 <code>code/</code>。表在 <code>results/</code>。完整的 HY-L066 試算表與 Vina 親和圖留在 TMU 工作站，因為檔案大，而且藥庫是廠商清單。分數以這個儲存庫的 CSV 為準。</span><span class="en">Scripts are in <code>code/</code>. Tables are in <code>results/</code>. The full HY-L066 spreadsheet and the Vina maps stay on the TMU workstation because they are large and the library is a vendor table. The CSV files in this repository are the score record.</span></p>
+  <p><span class="zh">相關舊頁：<a href="https://hunglinchen2003.github.io/mva-hackathon-2026-data/">Track 1 資料頁</a>，<a href="https://hunglinchen2003.github.io/bub1b-n1002k/chembl10.html">兩百萬庫短名單</a>。</span><span class="en">Earlier pages: <a href="https://hunglinchen2003.github.io/mva-hackathon-2026-data/">Track 1 data</a>, <a href="https://hunglinchen2003.github.io/bub1b-n1002k/chembl10.html">the two-million-compound shortlist</a>.</span></p>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Taipei Medical University · College of Interdisciplinary Studies · College of Pharmacy · Hung-Lin Chen · MVA Hackathon 2026 Track 2</p>
+    <p><span class="zh">計算與細胞假說。不是醫療建議。</span><span class="en">A computational and cellular hypothesis. Not medical advice.</span></p>
+  </div>
+</footer>
+<script>
+  const body = document.body;
+  const saved = localStorage.getItem("mva-lang");
+  if (saved === "en" || saved === "zh") body.dataset.lang = saved;
+  document.querySelectorAll(".lang button").forEach((button) => {
+    button.addEventListener("click", () => {
+      body.dataset.lang = button.dataset.set;
+      localStorage.setItem("mva-lang", button.dataset.set);
+      document.documentElement.lang = button.dataset.set === "zh" ? "zh-Hant" : "en";
+    });
+  });
+</script>
+</body>
+</html>

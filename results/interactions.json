@@ -1,0 +1,268 @@
+[
+  {
+    "name": "Pralsetinib",
+    "vina_kcal": -7.127,
+    "min_heavy_to_nz_A": 3.45,
+    "contacts": [
+      {
+        "kind": "hydrophobic",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 3.55,
+        "to_K1002": true
+      },
+      {
+        "kind": "hydrophobic",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 3.71,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 976,
+        "resn": "SER",
+        "dist_A": 2.41,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1001,
+        "resn": "LEU",
+        "dist_A": 2.21,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 2.6,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1004,
+        "resn": "ASN",
+        "dist_A": 2.5,
+        "to_K1002": false
+      }
+    ]
+  },
+  {
+    "name": "Lapatinib",
+    "vina_kcal": -7.181,
+    "min_heavy_to_nz_A": 3.89,
+    "contacts": [
+      {
+        "kind": "hydrophobic",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 3.69,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 976,
+        "resn": "SER",
+        "dist_A": 2.77,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 3.09,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 3.2,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1004,
+        "resn": "ASN",
+        "dist_A": 1.85,
+        "to_K1002": false
+      }
+    ]
+  },
+  {
+    "name": "Tucatinib",
+    "vina_kcal": -7.718,
+    "min_heavy_to_nz_A": 3.37,
+    "contacts": [
+      {
+        "kind": "hydrophobic",
+        "uniprot": 944,
+        "resn": "ASN",
+        "dist_A": 3.68,
+        "to_K1002": false
+      },
+      {
+        "kind": "hydrophobic",
+        "uniprot": 977,
+        "resn": "PHE",
+        "dist_A": 3.46,
+        "to_K1002": false
+      },
+      {
+        "kind": "hydrophobic",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 3.99,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 944,
+        "resn": "ASN",
+        "dist_A": 2.33,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 950,
+        "resn": "GLN",
+        "dist_A": 2.67,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1001,
+        "resn": "LEU",
+        "dist_A": 2.79,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 2.48,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 2.88,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 2.06,
+        "to_K1002": true
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1004,
+        "resn": "ASN",
+        "dist_A": 2.65,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1006,
+        "resn": "GLU",
+        "dist_A": 2.31,
+        "to_K1002": false
+      }
+    ]
+  },
+  {
+    "name": "Entrectinib",
+    "vina_kcal": -7.56,
+    "min_heavy_to_nz_A": 3.87,
+    "contacts": [
+      {
+        "kind": "hydrophobic",
+        "uniprot": 995,
+        "resn": "LYS",
+        "dist_A": 3.89,
+        "to_K1002": false
+      },
+      {
+        "kind": "hydrophobic",
+        "uniprot": 999,
+        "resn": "ARG",
+        "dist_A": 3.78,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 994,
+        "resn": "ASN",
+        "dist_A": 3.47,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1014,
+        "resn": "GLU",
+        "dist_A": 2.54,
+        "to_K1002": false
+      }
+    ]
+  },
+  {
+    "name": "Capmatinib",
+    "vina_kcal": -7.207,
+    "min_heavy_to_nz_A": 3.07,
+    "contacts": [
+      {
+        "kind": "hbond",
+        "uniprot": 980,
+        "resn": "LEU",
+        "dist_A": 2.22,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 994,
+        "resn": "ASN",
+        "dist_A": 2.81,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 1002,
+        "resn": "LYS",
+        "dist_A": 2.32,
+        "to_K1002": true
+      }
+    ]
+  },
+  {
+    "name": "Ponatinib",
+    "vina_kcal": -7.631,
+    "min_heavy_to_nz_A": 4.56,
+    "contacts": [
+      {
+        "kind": "hydrophobic",
+        "uniprot": 995,
+        "resn": "LYS",
+        "dist_A": 3.68,
+        "to_K1002": false
+      },
+      {
+        "kind": "hydrophobic",
+        "uniprot": 999,
+        "resn": "ARG",
+        "dist_A": 3.93,
+        "to_K1002": false
+      },
+      {
+        "kind": "hbond",
+        "uniprot": 999,
+        "resn": "ARG",
+        "dist_A": 3.32,
+        "to_K1002": false
+      }
+    ]
+  }
+]
