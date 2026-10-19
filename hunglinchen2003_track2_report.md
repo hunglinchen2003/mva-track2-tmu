@@ -1,9 +1,9 @@
 # TMU Track 2 report: repositioned FDA drugs for BUB1B p.Asn1002Lys
 
-Hung-Lin Chen, on behalf of TMU-IIH PharmOmics  
+Authors: wang3yuan; Hung-Lin Chen (corresponding author), TMU-IIH PharmOmics  
 College of Interdisciplinary Studies and College of Pharmacy, Taipei Medical University
 
-Hugging Face account: `hunglinchen2003`  
+Hugging Face accounts: `wang3yuan`; `hunglinchen2003` (corresponding author)  
 GitHub: https://github.com/hunglinchen2003/mva-track2-tmu  
 Bilingual page: `index.html` on that repository
 
@@ -135,4 +135,4 @@ No parental phase, no RNA, no patient cell. The absent N1002K knock-in is the sc
 
 ## 中文摘要
 
-TMU-IIH PharmOmics，台北醫學大學跨領域學院與藥學院。這個 MVA 孩子唯一的雙等位功能變異是 *BUB1B* p.Leu737Ter 與 p.Asn1002Lys，機制是紡錘體檢查點的功能失去。Track 2 提案是 14 個 FDA 核准藥，依 DynamicBind 對激酶的預測親和力排序，並用 Connectivity Map（LINCS L1000）找會提高 BUB1B mRNA 的老藥，讓 mRNA 與蛋白並行回補缺陷。優先六名是 pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。實驗讀值是 HeLa *BUB1B* knockdown 的細胞核是否回到對照。不用 N1002K knock-in，是為了讓讀值對其他 *BUB1B* 基因型，以及其他紡錘體組成或代謝異常的 MVA 病人仍然適用。前六名不是複方。兒童標示只涵蓋 pralsetinib 的 12 歲以上 RET 融合甲狀腺癌，以及 entrectinib 大於 1 個月且腫瘤有 NTRK 融合的情形；另外四個藥的兒童安全性未建立。臨床上還需要腫瘤自己的體細胞突變分析。臨床相容性另排一層，不取代表 6：第一梯隊是 entrectinib 與 pralsetinib；第二梯隊是 tucatinib 與 capmatinib；ponatinib 與 lapatinib 依黑框警告排除。八個 HPO 沒有發育遲緩。Entrectinib 的兒童適應症是 NTRK 融合實體瘤，不是未定序的橫紋肌肉瘤。Lapatinib 要與餐食隔開至少一小時，不是配高脂食物。CMap L1000 另有 32 個會提高 BUB1B mRNA 的簽名。CHK1、PLK、Aurora 那一類，以及清單裡的 ponatinib，不拿來合併。已上市、非有絲分裂的老藥裡，只有 doxycycline 值得在單藥有效之後，於細胞實驗跟 entrectinib 或 pralsetinib 做一對。抗精神病藥、duloxetine、vorinostat 與 valproic acid 不做成併用。這不是治療建議。完整中英對照在同一儲存庫的 `index.html`。
+TMU-IIH PharmOmics，台北醫學大學跨領域學院與藥學院。作者是 wang3yuan 與 Hung-Lin Chen，通訊作者是 Hung-Lin Chen（hunglinchen2003）。這個 MVA 孩子唯一的雙等位功能變異是 *BUB1B* p.Leu737Ter 與 p.Asn1002Lys，機制是紡錘體檢查點的功能失去。Track 2 提案是 14 個 FDA 核准藥，依 DynamicBind 對激酶的預測親和力排序，並用 Connectivity Map（LINCS L1000）找會提高 BUB1B mRNA 的老藥，讓 mRNA 與蛋白並行回補缺陷。優先六名是 pralsetinib、lapatinib、tucatinib、entrectinib、capmatinib、ponatinib。實驗讀值是 HeLa *BUB1B* knockdown 的細胞核是否回到對照。不用 N1002K knock-in，是為了讓讀值對其他 *BUB1B* 基因型，以及其他紡錘體組成或代謝異常的 MVA 病人仍然適用。前六名不是複方。兒童標示只涵蓋 pralsetinib 的 12 歲以上 RET 融合甲狀腺癌，以及 entrectinib 大於 1 個月且腫瘤有 NTRK 融合的情形；另外四個藥的兒童安全性未建立。臨床上還需要腫瘤自己的體細胞突變分析。臨床相容性另排一層，不取代表 6：第一梯隊是 entrectinib 與 pralsetinib；第二梯隊是 tucatinib 與 capmatinib；ponatinib 與 lapatinib 依黑框警告排除。八個 HPO 沒有發育遲緩。Entrectinib 的兒童適應症是 NTRK 融合實體瘤，不是未定序的橫紋肌肉瘤。Lapatinib 要與餐食隔開至少一小時，不是配高脂食物。CMap L1000 另有 32 個會提高 BUB1B mRNA 的簽名。CHK1、PLK、Aurora 那一類，以及清單裡的 ponatinib，不拿來合併。已上市、非有絲分裂的老藥裡，只有 doxycycline 值得在單藥有效之後，於細胞實驗跟 entrectinib 或 pralsetinib 做一對。抗精神病藥、duloxetine、vorinostat 與 valproic acid 不做成併用。這不是治療建議。完整中英對照在同一儲存庫的 `index.html`。
