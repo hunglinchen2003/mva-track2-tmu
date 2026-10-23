@@ -17,6 +17,8 @@ Pitch video: https://youtu.be/415cWfMVpw8
 | --- | --- |
 | [wang3yuan](https://huggingface.co/wang3yuan) | 作者 |
 | [hunglinchen2003](https://huggingface.co/hunglinchen2003) | 作者；通訊作者；送出 |
+| [maggie0108](https://huggingface.co/maggie0108) | 團員 |
+| [LynnChang](https://huggingface.co/LynnChang) | 團員 |
 
 ## Member Hugging Face accounts
 
@@ -26,6 +28,8 @@ Add the next account on a new row. One member submits. Judges review the latest 
 | --- | --- |
 | [wang3yuan](https://huggingface.co/wang3yuan) | Author. |
 | [hunglinchen2003](https://huggingface.co/hunglinchen2003) | Author. Corresponding author. Submits. |
+| [maggie0108](https://huggingface.co/maggie0108) | Team member. |
+| [LynnChang](https://huggingface.co/LynnChang) | Team member. |
 
 Scores in `results/` are the local AutoDock Vina and DynamicBind outputs. `results/bub1b_l1000_rnaseq_up.csv` is the LINCS L1000-to-RNAseq list of signatures in which BUB1B transcript abundance rose. The vendor HY-L066 spreadsheet and the Vina map files stay on the TMU workstation. Scripts in `code/` record the settings: 22 Å box on Lys1002 NZ, Vina 1.2.7, exhaustiveness 8, seed 17; DynamicBind paper weights, 10 steps, 2 samples, no relax.
 
